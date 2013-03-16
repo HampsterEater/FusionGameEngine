@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.20706</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3507008C-8550-46F7-9B71-524E4EBE575F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryPhoenix.Fusion.Editor</RootNamespace>
+    <AssemblyName>Editor</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Itanium' ">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Assembly.cs" />
+    <Compile Include="Editor.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\About Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\About Window.Designer.cs">
+      <DependentUpon>About Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Asset Manager Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Asset Manager Window.Designer.cs">
+      <DependentUpon>Asset Manager Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Build Project Log Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Build Project Log Window.Designer.cs">
+      <DependentUpon>Build Project Log Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Console Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Console Window.Designer.cs">
+      <DependentUpon>Console Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Editor Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Editor Window.Designer.cs">
+      <DependentUpon>Editor Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Emitter Editor Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Emitter Editor Window.Designer.cs">
+      <DependentUpon>Emitter Editor Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Entity Properties Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Entity Properties Window.Designer.cs">
+      <DependentUpon>Entity Properties Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Map Properties Windows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Map Properties Windows.Designer.cs">
+      <DependentUpon>Map Properties Windows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\New Tileset Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\New Tileset Window.Designer.cs">
+      <DependentUpon>New Tileset Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Preferences Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Preferences Window.Designer.cs">
+      <DependentUpon>Preferences Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Project Build Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Project Build Window.Designer.cs">
+      <DependentUpon>Project Build Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Scene Graph Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Scene Graph Window.Designer.cs">
+      <DependentUpon>Scene Graph Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Script Editor Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Script Editor Window.Designer.cs">
+      <DependentUpon>Script Editor Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tileset Properties Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Tileset Properties Window.Designer.cs">
+      <DependentUpon>Tileset Properties Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tileset Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Tileset Window.Designer.cs">
+      <DependentUpon>Tileset Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TipOfTheDay Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\TipOfTheDay Window.Designer.cs">
+      <DependentUpon>TipOfTheDay Window.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\About Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Asset Manager Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Asset Manager Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Console Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Console Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Editor Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Editor Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Map Properties Windows.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Map Properties Windows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\New Tileset Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>New Tileset Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Preferences Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Preferences Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Scene Graph Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Scene Graph Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Script Editor Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Script Editor Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Tileset Properties Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tileset Properties Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\TipOfTheDay Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TipOfTheDay Window.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audio\Audio.csproj">
+      <Project>{DE380F5C-38DF-4707-873B-0B46A85DA81A}</Project>
+      <Name>Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{954732DC-151D-4838-A750-D6D0672848F0}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{4F8038C9-A499-4355-AD3C-03E8C0872E29}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.csproj">
+      <Project>{A84FF48F-D281-43A1-9C23-B2B6F2606D9C}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Runtime\Runtime.csproj">
+      <Project>{E118515F-AF30-4F47-A1DE-6AC86F1F8F6B}</Project>
+      <Name>Runtime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BinaryPhoenixLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\effect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joystick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flip_horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flip_vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_backwards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_forwards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate_anticlockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rotate_clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_middle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_top1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\handles1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_backwards1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_forwards1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move_front1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duplicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\middle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backwards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forwards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anticlockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paintbrush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asset_manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\console.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene_graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snaptogrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\totd_strip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emitter_designer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cutscene_designer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repeat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entity_insert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spellcheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Windows\Entity Properties Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Entity Properties Window.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse1.png" />
+    <EmbeddedResource Include="Resources\grid.png" />
+    <EmbeddedResource Include="Windows\Build Project Log Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Build Project Log Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Emitter Editor Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Emitter Editor Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Project Build Window.resx">
+      <DependentUpon>Project Build Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\tile_picker.png" />
+    <None Include="Resources\selector.png" />
+    <None Include="Resources\rubber.png" />
+    <None Include="Resources\rounded_rectangle.png" />
+    <None Include="Resources\rectangle.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\paintcan.png" />
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier_zoom_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magifier_zoom_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\path_marker.png" />
+    <EmbeddedResource Include="Windows\Tileset Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Tileset Window.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_go1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_get.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_copy.png" />
+  </ItemGroup>
+</Project>

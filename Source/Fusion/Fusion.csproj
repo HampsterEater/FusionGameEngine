@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D972ACE-D4F4-403F-9FAD-B426A1ECE457}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryPhoenix.Fusion.Engine</RootNamespace>
+    <AssemblyName>Fusion</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <SignManifests>false</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugSymbols>false</DebugSymbols>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Itanium' ">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Assembly.cs" />
+    <Compile Include="Console Functions\Fusion.cs" />
+    <Compile Include="Console Functions\Map.cs" />
+    <Compile Include="Console Functions\System.cs" />
+    <Compile Include="Console Functions\Statistical.cs" />
+    <Compile Include="Console Functions\Debug\Graphical Console.cs" />
+    <Compile Include="Fusion.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripting Functions\Fusion.cs" />
+    <Compile Include="Windows\About Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\About Window.Designer.cs">
+      <DependentUpon>About Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Ban Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Ban Window.Designer.cs">
+      <DependentUpon>Ban Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Game Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Game Window.Designer.cs">
+      <DependentUpon>Game Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Games Explorer Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Games Explorer Window.Designer.cs">
+      <DependentUpon>Games Explorer Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Loading Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Loading Window.designer.cs">
+      <DependentUpon>Loading Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Login Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Login Window.Designer.cs">
+      <DependentUpon>Login Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Register Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Register Window.Designer.cs">
+      <DependentUpon>Register Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Reset Password Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Reset Password Window.Designer.cs">
+      <DependentUpon>Reset Password Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Server Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Server Window.Designer.cs">
+      <DependentUpon>Server Window.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Runtime, Version=1.0.2394.13939, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audio\Audio.csproj">
+      <Project>{DE380F5C-38DF-4707-873B-0B46A85DA81A}</Project>
+      <Name>Audio</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{954732DC-151D-4838-A750-D6D0672848F0}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{4F8038C9-A499-4355-AD3C-03E8C0872E29}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.csproj">
+      <Project>{A84FF48F-D281-43A1-9C23-B2B6F2606D9C}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\About Window.resx">
+      <DependentUpon>About Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Ban Window.resx">
+      <DependentUpon>Ban Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Game Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Game Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Games Explorer Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Games Explorer Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Loading Window.resx">
+      <DependentUpon>Loading Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Login Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Register Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Register Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Reset Password Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reset Password Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Server Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Server Window.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+</Project>

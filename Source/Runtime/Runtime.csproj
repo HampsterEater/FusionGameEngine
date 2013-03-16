@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E118515F-AF30-4F47-A1DE-6AC86F1F8F6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryPhoenix.Fusion.Runtime</RootNamespace>
+    <AssemblyName>Runtime</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Itanium' ">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Assembly.cs" />
+    <Compile Include="Collision\Manager.cs" />
+    <Compile Include="Color Methods.cs" />
+    <Compile Include="Console\Console Commands\System.cs" />
+    <Compile Include="Console\Console.cs" />
+    <Compile Include="Controls\Find And Replace Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Find And Replace Window.Designer.cs">
+      <DependentUpon>Find And Replace Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Input Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Input Window.Designer.cs">
+      <DependentUpon>Input Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Property List View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Property List View.Designer.cs">
+      <DependentUpon>Property List View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Script Text Box.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Script Text Box.Designer.cs">
+      <DependentUpon>Script Text Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs" />
+    <Compile Include="Preformance Methods.cs" />
+    <Compile Include="Data Methods.cs" />
+    <Compile Include="File Downloader.cs" />
+    <Compile Include="IO Methods.cs" />
+    <Compile Include="Events\Manager.cs" />
+    <Compile Include="High Preformance Timer.cs" />
+    <Compile Include="Debug\Debug Log.cs">
+    </Compile>
+    <Compile Include="Languages\Manager.cs" />
+    <Compile Include="Math Methods.cs" />
+    <Compile Include="Native Methods.cs" />
+    <Compile Include="Processs\Manager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reflection Methods.cs" />
+    <Compile Include="Resources\Manager.cs" />
+    <Compile Include="Resources\Pak File.cs" />
+    <Compile Include="Scripting\Compiler.cs" />
+    <Compile Include="Scripting\Debugger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scripting\Debugger.Designer.cs">
+      <DependentUpon>Debugger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scripting\Lexical Analyser.cs" />
+    <Compile Include="Scripting\Optimizer.cs" />
+    <Compile Include="Scripting\Preprocessor.cs" />
+    <Compile Include="Scripting\Script Functions\Debug.cs" />
+    <Compile Include="Scripting\Script Functions\IO.cs" />
+    <Compile Include="Scripting\Script Functions\Language.cs" />
+    <Compile Include="Scripting\Script Functions\List.cs" />
+    <Compile Include="Scripting\Script Functions\Mathmatics.cs" />
+    <Compile Include="Scripting\Script Functions\Resource.cs" />
+    <Compile Include="Scripting\Script Functions\Runtime.cs" />
+    <Compile Include="Scripting\Script Functions\String.cs" />
+    <Compile Include="Scripting\Script Functions\Thread.cs" />
+    <Compile Include="Scripting\Virtual Machine.cs" />
+    <Compile Include="Stream Factorys\Pak Factory.cs" />
+    <Compile Include="Stream Factorys\Memory Factory.cs" />
+    <Compile Include="Stream Factorys\Default Factory.cs" />
+    <Compile Include="Stream Methods.cs" />
+    <Compile Include="String Methods.cs" />
+    <Compile Include="Structures.cs" />
+    <Compile Include="XML Configuration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Find And Replace Window.resx">
+      <DependentUpon>Find And Replace Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Input Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Input Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Property List View.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Property List View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Script Text Box.resx">
+      <DependentUpon>Script Text Box.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scripting\Debugger.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Debugger.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categorized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alphabetical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\stop.png" />
+  </ItemGroup>
+</Project>

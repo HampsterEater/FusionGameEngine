@@ -1,0 +1,17 @@
+
+This project is abandonware written by me (timothy leonard) and 
+published at binaryphoenix.com. I've made the project open source
+in the hope that somebody, somemwhere may find a use for it.
+
+If you have any questions you can contact me at helios4ever@gmail.com, please
+don't ask any questions about bug fixs, updates or similar, as I'll most likely
+ignore your email. As stated above, this project is abandonware, I have no intention
+of maintaining it in the future.
+
+The source code for this program can be compiled under Visual Studio 2008. Be aware
+though there are a lot of bugs, and things still needing to be done. This project
+was abandoned, mid development.
+
+This project is licensed under the GPL license, which you can find a copy of 
+in this directory.
+

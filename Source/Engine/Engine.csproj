@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{954732DC-151D-4838-A750-D6D0672848F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BinaryPhoenix.Fusion.Engine</RootNamespace>
+    <AssemblyName>Engine</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|AnyCPU' ">
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Itanium' ">
+    <OutputPath>bin\Itanium\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>Itanium</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|Itanium' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Itanium\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>Itanium</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Profile|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Profile\</OutputPath>
+    <DefineConstants>TRACE;PROFILE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Entitys\Path Marker.cs" />
+    <Compile Include="Networking\Manager.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Console Functions\Engine.cs" />
+    <Compile Include="Console Functions\Entity.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Assembly.cs" />
+    <Compile Include="Entitys\Camera.cs" />
+    <Compile Include="Entitys\Emitter.cs" />
+    <Compile Include="Entitys\Entity.cs" />
+    <Compile Include="Entitys\Group.cs" />
+    <Compile Include="Entitys\Scripted Entity.cs" />
+    <Compile Include="Entitys\Tilemap Segment.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Processes\Animation Process.cs" />
+    <Compile Include="Processes\Callback Process.cs" />
+    <Compile Include="Processes\Channel Fade Process.cs" />
+    <Compile Include="Processes\Destroy Entity Process.cs" />
+    <Compile Include="Processes\Entity Move To Process.cs" />
+    <Compile Include="Processes\Path Follow Process.cs" />
+    <Compile Include="Processes\Start Script Process.cs" />
+    <Compile Include="Processes\Entity Fade Process.cs" />
+    <Compile Include="Processes\Delay Process.cs" />
+    <Compile Include="Processes\Entity Boundry Process.cs" />
+    <Compile Include="Processes\Entity Follow Process.cs" />
+    <Compile Include="Processes\Entity Shake Process.cs" />
+    <Compile Include="Processes\Script Execution Process.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scene Graph.cs" />
+    <Compile Include="Scripting Functions\AI.cs" />
+    <Compile Include="Scripting Functions\Audio.cs" />
+    <Compile Include="Scripting Functions\Entity.cs" />
+    <Compile Include="Scripting Functions\Engine.cs" />
+    <Compile Include="Scripting Functions\Event.cs" />
+    <Compile Include="Scripting Functions\Graphics.cs" />
+    <Compile Include="Scripting Functions\Input.cs" />
+    <Compile Include="Scripting Functions\Map.cs" />
+    <Compile Include="Scripting Functions\Networking.cs" />
+    <Compile Include="Scripting Functions\Process.cs" />
+    <Compile Include="Windows\Bitmap Font Selector Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Bitmap Font Selector Window.Designer.cs">
+      <DependentUpon>Bitmap Font Selector Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Image Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Image Window.Designer.cs">
+      <DependentUpon>Image Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Music Player Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Music Player Window.Designer.cs">
+      <DependentUpon>Music Player Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Sound Selector Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Sound Selector Window.Designer.cs">
+      <DependentUpon>Sound Selector Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Error Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Error Window.Designer.cs">
+      <DependentUpon>Error Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Image Selector Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Image Selector Window.Designer.cs">
+      <DependentUpon>Image Selector Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Progress Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Progress Window.Designer.cs">
+      <DependentUpon>Progress Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Property List View Editors.cs" />
+    <Compile Include="Windows\Splash Screen Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Splash Screen Window.Designer.cs">
+      <DependentUpon>Splash Screen Window.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Runtime, Version=1.0.2411.26029, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audio\Audio.csproj">
+      <Project>{DE380F5C-38DF-4707-873B-0B46A85DA81A}</Project>
+      <Name>Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.csproj">
+      <Project>{4F8038C9-A499-4355-AD3C-03E8C0872E29}</Project>
+      <Name>Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.csproj">
+      <Project>{A84FF48F-D281-43A1-9C23-B2B6F2606D9C}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Bitmap Font Selector Window.resx">
+      <DependentUpon>Bitmap Font Selector Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Image Window.resx">
+      <DependentUpon>Image Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Music Player Window.resx">
+      <DependentUpon>Music Player Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Sound Selector Window.resx">
+      <DependentUpon>Sound Selector Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Error Window.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Error Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Image Selector Window.resx">
+      <DependentUpon>Image Selector Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Progress Window.resx">
+      <DependentUpon>Progress Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Splash Screen Window.resx">
+      <DependentUpon>Splash Screen Window.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopicon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopicon1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier_zoom_in.png" />
+  </ItemGroup>
+</Project>
